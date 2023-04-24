@@ -18,9 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html className={openSans.className} lang="en">
-      <Navbar />
-      <body className="">{children}</body>
-      {/* <Footer /> */}
+      <body className="min-h-screen">
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
