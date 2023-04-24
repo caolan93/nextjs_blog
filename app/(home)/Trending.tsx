@@ -1,4 +1,29 @@
+import Link from "next/link";
 import React from "react";
+
+type TrendingCardProps = {
+  className?: string;
+};
+
+const TrendingCard = ({ className }: TrendingCardProps) => {
+  return (
+    <Link
+      className={`${className} relative mt-7 block w-full h-96 sm:mt-0 sm:h-auto hover:opacity-50`}
+      // href={`${process.env.NEXT_PUBLIC_URL}/post/${post?.id}`}
+      href="/"
+    >
+      <div className="z-0 relative w-full h-full bg-wh-900">
+        image
+        <div className="absolute z-1 top-0 left-0 w-full h-full bg-gradient-gradual cursor-pointer"></div>
+        <div className="absolute z-2 bottom-0 left-0 p-3 cursor-pointer">
+          <h4 className="inline-block px-5 py-1 font-semibold bg-accent-orange text-wh-900">
+            Category
+          </h4>
+        </div>
+      </div>
+    </Link>
+  );
+};
 
 type Props = {};
 
@@ -30,10 +55,10 @@ const Trending = (props: Props) => {
       {/* GRIP OPTION */}
 
       <div className="grid gap-5 grid-cols-4 sm:grid-rows-2 h-[600px] my-3">
-        <div className="col-span-4 row-span-auto sm:col-span-2 sm:row-span-2 bg-wh-500"></div>
-        <div className="col-span-4 row-span-auto sm:col-span-2 sm:row-span-1 bg-wh-500"></div>
-        <div className="col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500"></div>
-        <div className="col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500"></div>
+        <div className="cursor-pointer col-span-4 row-span-auto sm:col-span-2 sm:row-span-2 bg-wh-500"></div>
+        <div className="cursor-pointer col-span-4 row-span-auto sm:col-span-2 sm:row-span-1 bg-wh-500"></div>
+        <div className="cursor-pointer col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500"></div>
+        <div className="cursor-pointer col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500"></div>
       </div>
     </section>
   );
