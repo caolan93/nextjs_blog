@@ -18,35 +18,43 @@ const SocialLinks = ({ isDark = false }: Props) => {
       <a href="https://twitter.com" target="_blank">
         <Image
           alt="twitter icon"
-          className={`${isDark} ? "brighness-0" : hover:opactity-50`}
+          className={isDark ? "brightness-0" : "hover:opacity-50"}
           width={20}
           height={20}
           src={Twitter}
         />
+      </a>
+      <a href="https://instagram.com" target="_blank">
         <Image
           alt="instagram icon"
-          className={`${isDark} ? "brighness-0" : hover:opactity-50`}
+          className={isDark ? "brightness-0" : "hover:opacity-50"}
           width={20}
           height={20}
           src={Instagram}
         />
+      </a>
+      <a href="https://facebook.com" target="_blank">
         <Image
           alt="facebook icon"
-          className={`${isDark} ? "brighness-0" : hover:opactity-50`}
+          className={isDark ? "brightness-0" : "hover:opacity-50"}
           width={20}
           height={20}
           src={Facebook}
         />
+      </a>
+      <a href="https://discord.com" target="_blank">
         <Image
           alt="discord icon"
-          className={`${isDark} ? "brighness-0" : hover:opactity-50`}
+          className={isDark ? "brightness-0" : "hover:opacity-50"}
           width={20}
           height={20}
           src={Discord}
         />
+      </a>
+      <a href="https://google.com" target="_blank">
         <Image
           alt="google icon"
-          className={`${isDark} ? "brighness-0" : hover:opactity-50`}
+          className={isDark ? "brightness-0" : "hover:opacity-50"}
           width={20}
           height={20}
           src={Google}

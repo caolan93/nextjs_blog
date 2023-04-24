@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import SocialLinks from "./SocialLinks";
 
 type Props = {};
 
@@ -8,7 +9,9 @@ const Navbar = (props: Props) => {
   return (
     <header className="mb-5">
       <nav className="flex justify-between items-center w-full bg-wh-900 text-wh-10 px-10 py-4">
-        <div className="hidden sm:block">Social Links</div>
+        <div className="hidden sm:block">
+          <SocialLinks />
+        </div>
         <ul className="flex justify-between items-center gap-10">
           <Link href="/">Home</Link>
           <Link href="/">Trending</Link>
@@ -25,7 +28,7 @@ const Navbar = (props: Props) => {
             Blog dedicated towards AI and generation and job automation
           </p>
         </div>
-        <div className="basis-full realtive w-auto h-32 bg-wh-500 text-wh-10">
+        <div className="basis-full realtive w-auto h-32 bg-wh-500 text-wh-10 flex justify-center items-center">
           Image here
         </div>
       </div>
