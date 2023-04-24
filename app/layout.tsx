@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html className={openSans.className} lang="en">
-      <body>{children}</body>
+      <body className="">{children}</body>
     </html>
   );
 }
