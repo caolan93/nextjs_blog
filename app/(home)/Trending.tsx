@@ -53,11 +53,15 @@ const Trending = (props: Props) => {
       {/* GRIP OPTION */}
 
       <div className="grid gap-5 grid-cols-4 sm:grid-rows-2 sm:h-[600px] my-3">
-        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-2 sm:row-span-2 bg-wh-500"></TrendingCard>
-        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-2 sm:row-span-1 bg-wh-500"></TrendingCard>
-        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500"></TrendingCard>
-        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500"></TrendingCard>
+        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-2 sm:row-span-2 bg-wh-500" />
+        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-2 sm:row-span-1 bg-wh-500" />
+        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500" />
+        <TrendingCard className="cursor-pointer col-span-4 row-span-auto sm:col-span-1 sm:row-span-1 bg-wh-500" />
       </div>
+      <p className="text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ducimus
+        quas? Eligendi quaerat quasi quis voluptates iusto ab tempore ut!
+      </p>
     </section>
   );
 };
