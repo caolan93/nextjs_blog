@@ -3,6 +3,7 @@ import Tech from "./(home)/Tech";
 import Travel from "./(home)/Travel";
 import Other from "./(components)/Other";
 import Subscribe from "./(components)/Subscribe";
+import Sidebar from "./(components)/Sidebar";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
           <div className="hidden md:block">
             <Subscribe />
           </div>
-          {/* 
-          <div className="basis-1/4"></div> */}
+        </div>
+        <div className="basis-1/4">
+          <Sidebar />
         </div>
       </div>
     </main>
