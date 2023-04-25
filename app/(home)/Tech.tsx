@@ -15,23 +15,27 @@ const Tech = (props: Props) => {
           Latest News in Technology
         </p>
       </div>
-      <div className="grid grid-rows-3 grid-cols-4 gap-3 sm:h-[600px] mt-3">
+      <div className="sm:grid grid-cols-2 grid-rows-3 gap-8 my-5">
         <Card
-          imageHeight=""
-          className="col-span-4 row-span-auto bg-wh-900 sm:col-span-2 sm:row-span-3 "
-        ></Card>
+          imageHeight="h-96"
+          isLongForm={true}
+          className="bg-wh-500 col-span-1 row-span-3"
+        />
         <Card
-          imageHeight=""
-          className="col-span-4 row-span-auto bg-wh-900 sm:col-span-2 sm:row-span-1 sm:h-auto"
-        ></Card>
+          imageHeight="h-48"
+          isSmallCard={true}
+          className="bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+        />
         <Card
-          imageHeight=""
-          className="col-span-4 row-span-auto bg-wh-900 sm:col-span-2 sm:row-span-1 sm:h-auto"
-        ></Card>
+          imageHeight="h-48"
+          isSmallCard={true}
+          className="bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+        />
         <Card
-          imageHeight=""
-          className="col-span-4 row-span-auto bg-wh-900 sm:col-span-2 sm:row-span-1 sm:h-auto"
-        ></Card>
+          imageHeight="h-48"
+          isSmallCard={true}
+          className="bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+        />
       </div>
     </section>
   );
