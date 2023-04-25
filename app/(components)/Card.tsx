@@ -38,7 +38,9 @@ const Card = ({
         className={`text-wh-500 ${
           isLongForm ? "line-clamp-5" : "line-clamp-3"
         }`}
-      >Snippet/p>
+      >
+        Snippet
+      </p>
     </div>
   );
 };
